@@ -188,6 +188,10 @@ button:hover{
 }
 
 /*userPage*/
+#user-registration-form{
+  height: 30rem;
+}
+
 .signup-form{
   width: 300px;
   padding: 20px;
@@ -251,7 +255,7 @@ button:hover{
 
 /*political office*/
 #pol-office-list{
-  padding: 20px;
+  height: 72vh;
 }
 
 .pol-off a{
