@@ -2,7 +2,7 @@ body{
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
 }
 
 .container{
@@ -90,7 +90,6 @@ div .dropbtn:hover{
   color: #fce2da;
   font-weight: bold;
 }
-
 .dropbtn{
   text-transform: uppercase;
 }
@@ -116,9 +115,11 @@ div .dropbtn:hover{
 
 h2{
   margin: 0;
-  padding: 0 0 10px;
-  color: #1a1919;
+  padding: 0;
+  color: #000;
   text-align: center;
+  font-size: 30px;
+  
 }
 
 .loginBox p{
@@ -126,66 +127,65 @@ h2{
   padding: 0;
   font-weight: bold;
   color: rgb(250, 8, 8);
+  font-size: 1rem;
 }
 
-.loginBox input,
-.user-profile-box input{
+.loginBox input{
   width: 100%;
   margin-bottom: 10px; 
 }
 
-.loginBox input[type="text"],
-.loginBox input[type="password"],
-.user-profile-box input[type="text"]{
-  border: 2px solid #fff;
-  background: transparent;
+.loginBox input[type="email"],
+.loginBox input[type="password"]{
+  border: 2px solid #000;
+  background: -o-repeating-linear-gradient();
   outline: none;
   height: 2.2rem;
-  color: #fff;
+  color: rgb(1, 8, 4);
   font-size: 16px;
   border-radius: 4px; 
 }
 
-.loginBox input[type="submit"],
-.user-profile-box input[type="submit"]{
-  height: 2rem;
-  color: #fff;;
+button{
+  height: 2.5rem;
   font-size: 16px;
-  background: #0e0d0b;
+  background: #000;
   cursor: pointer;
   border-radius: 20px;
   border: none;
   outline: none;
 }
 
-.loginBox input[type="submit"], .user-profile-box input[type="submit"]:hover{
-  background: #4b0404;
-  color: #090a0a;
+button:hover{
+  background: rgb(250, 8, 8);
+  color: #fff;
 }
 
-.loginBox a, .user-profile-box a{
+.loginBox a{
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  margin-top: 30px;    
 }
 
 
-/*sidebar*/
-aside#sidebar{
-  float: right;
-  width: 30%;
-  margin-top: 10px;
-  max-height: 30rem;
+/* Details **/
+#details{
+  margin-top: 20px;    
 }
 
-/*main-col*/
-article#main-col{
+#details .details-1{
   float: left;
-  width: 65%;
-
+  width: 30%;
+  padding: 10px;
+  text-align: center;
 }
 
+#details .details-1 img{
+  width: 200px;
+  border-radius: 100px;
+}
 
 /*userPage*/
 .signup-form{
@@ -275,7 +275,6 @@ article#main-col{
   margin: auto; */
 }
 
-
 .user-profile-box{
   /* width: 17rem;
   height: 20rem;
@@ -318,9 +317,38 @@ h5 a:hover{
   color: #fff;
 }
 
+/*Admin Page**/
+.font-container-01{
+  display: flex;
+  height: 74.5vh;
+}
 
+.side-panel{
+  width: 15%;
+  flex: 1;
+  padding-left: 20px; 
+}
+.side-panel a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
 
+.main-panel{
+  flex: 2;
+  padding-right: 20px
+}
 
+legend{
+  text-align: center;
+}
+
+fieldset{
+  align-content: center;
+}
 
 
 /*footer*/
@@ -337,8 +365,7 @@ footer{
   header #logo,
   header nav,
   header nav li,
-  article#main-col,
-  aside#sidebar{
+  #details .details-1{
       float: none;
       text-align: center;
       width: 100%;
