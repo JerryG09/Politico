@@ -62,38 +62,6 @@ header a:hover{
   font-weight: bold;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #0a0a0a;
-  min-width: 160px;    
-}
-
-.dropdown-content a {
-  float: none;
-  color: rgb(243, 239, 239);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(158, 87, 87);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-div .dropbtn:hover{
-  color: #fce2da;
-  font-weight: bold;
-}
-.dropbtn{
-  text-transform: uppercase;
-}
-
 .header-tm li{
   display: inline;
 }
