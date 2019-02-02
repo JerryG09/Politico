@@ -1,28 +1,23 @@
 const politicoParty = [{
   id:1,
-  name:'pdp',
-  hqAddress:'warri',
-  logourl:'https://google.com/img.jpeg'
+  name:'APC',
+  hqAddress:'Warri',
+  logourl:'https://localhost/desktop/img.jpeg'
 },{
   id:2,
-  name:'',
-  hqAddress:'abuja',
-  logourl:'https://google.com/img.jpeg'
+  name:'PDP',
+  hqAddress:'Kogi',
+  logourl:'https://localhost/desktop/img.jpeg2'
 },{
   id:3,
-  name:'name',
-  hqAddress:'',
-  logourl:'https://google.com/img.jpeg'
+  name:'APGA',
+  hqAddress:'Jos',
+  logourl:'https://localhost/desktop/img.jpeg3'
 },{
   id:4,
-  name:'name',
+  name:'NPN',
   hqAddress:'address',
-  logourl:''
-},{
-  id:5,
-  name:'name',
-  hqAddress:'',
-  logourl:'https://google.com/img.jpeg'
+  logourl:'https://localhost/desktop/img.jpeg4'
 }
 ]
 
