@@ -21,6 +21,7 @@
   "homepage": "https://github.com/JerryG09/Politico#readme",
   "dependencies": {
     "@babel/preset-env": "*",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.23.0",
     "body-parser": "^1.18.3",
     "cli": "^1.0.1",
@@ -31,7 +32,6 @@
     "preset": "^1.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "http": "0.0.0",
