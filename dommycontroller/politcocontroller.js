@@ -37,7 +37,7 @@ class Politico {
    
     db.push(data);
     return res.status(201).json({
-      success: 'true',
+      status: 201,
       message: 'data added successfully',
       data
     })
@@ -87,16 +87,16 @@ class Politico {
     db.map((data, index) => {
       if (data.id === id) {
         db.splice(index, 1);
-        return res.status(200).json({
-          success: 'true',
-          message: 'Party deleted successfuly',
+        return res.status(404).json({
+          status: 404,
+          error: 'Party deleted successfuly',
         });
       }
     });
 
     return res.status(404).json({
-      success: 'false',
-      message: 'Party not found',
+      status: 404,
+      error: 'Party not found',
     })
   }
 
@@ -118,20 +118,20 @@ class Politico {
 
     if (!dataFound) {
       return res.status(404).json({
-        success: 'false',
-        message: 'Party not found',
+        status: '404',
+        error: 'Party not found',
       });
     }
 
     if (!req.body.name) {
       return res.status(400).json({
-        success: 'false',
-        message: 'name is required',
+        status: 400,
+        error: 'name is required',
       });
     } else if (!req.body.logourl) {
       return res.status(400).json({
-        success: 'false',
-        message: 'logourl is required',
+        status: 400,
+        error: 'logourl is required',
       });
     }
 
@@ -143,8 +143,8 @@ class Politico {
 
     db.splice(itemIndex, 1, updatedParty);
 
-    return res.status(201).json({
-      success: 'true',
+    return res.status(200).json({
+      status: 200,
       message: 'Party edited successfully',
       updatedParty,
     })

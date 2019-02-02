@@ -3,7 +3,36 @@ import db from '../dommy/db/pol-office-db';
 /**
  * @class Politico
  */
-class politicOffice{
+class PoliticOffice{
+   /**
+   * @param {*} req 
+   * @param {*} res
+   * @returns {*} json 
+   */
+  static createOffice (req, res){
+    if (!req.body.type.trim() === "") {
+      return res.status(400).json({
+        status: 400,
+        error: 'type is required'
+      });
+    } else if (!req.body.name.trim() ==="") {
+      return res.status(400).json({
+        status: 400,
+        error: 'name is required'
+      });
+    }
+    const data = {
+      id: db.length + 1,
+      type: req.body.type,
+      name: req.body.name
+    }
+    db.push(data);
+    return res.status(201).json({
+      status: 201,
+      data: 'data added successfully',
+      data
+    })
+  }
 
 /**
    * @param {*} req 
@@ -42,35 +71,7 @@ class politicOffice{
   }
 
   
-  /**
-   * @param {*} req 
-   * @param {*} res
-   * @returns {*} json 
-   */
-  static createOffice (req, res){
-    if (!req.body.type.trim() === "") {
-      return res.status(400).json({
-        status: 400,
-        message: 'type is required'
-      });
-    } else if (!req.body.name.trim() ==="") {
-      return res.status(400).json({
-        status: 400,
-        message: 'name is required'
-      });
-    }
-    const data = {
-      id: db.length + 1,
-      type: req.body.type,
-      name: req.body.name
-    }
-    db.push(data);
-    return res.status(201).json({
-      status: 201,
-      message: 'data added successfully',
-      data
-    })
-  }
+ 
 }
 
-export default politicOffice;
+export default PoliticOffice;

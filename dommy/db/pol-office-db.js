@@ -1,21 +1,21 @@
 const politicalOffice = [
   {
   id:1,
-  name:'pdp',
-  type:'presidential',
-  name:'Fred Audi'
+  name:'PDP',
+  type:'Federal',
 },{
   id:2,
-  name:'apc',
-  type:'presidential',
-  name:'Audu Ogbe'
+  name:'APC',
+  type:'Legislative'
 },{
   id:3,
-  name:'anpp',
-  type:'presidential',
-  name:'Jerry Ghana'
+  name:'ANPP',
+  type:'State'
+},{
+  id:4,
+  name:'APGA',
+  type:'Local Government'
 }
 ]
 
 export default politicalOffice;
-
