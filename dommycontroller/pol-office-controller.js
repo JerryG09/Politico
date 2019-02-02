@@ -55,19 +55,24 @@ class PoliticOffice{
    */
   static getAnOffice  (req, res) {
     const id = parseInt(req.params.id, 10);
+    let result;
+
     db.map((data) => {
       if (data.id === id) {
+        result = data
+      }
+      });
+    
+      if(result){
         return res.status(200).json({
-          success: 'true',
-          message: 'office retrieved successfully',
-          data,
-        });
-      } 
-  });
+          status: 200,    
+          data:result
 
+      })
+    }
    return res.status(404).send({
-     success: 'false',
-     message: 'office does not exist',
+     status: 404,
+     error: 'office does not exist',
     });
   }
 

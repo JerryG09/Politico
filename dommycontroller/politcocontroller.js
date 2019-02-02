@@ -18,7 +18,7 @@ class Politico {
         status: 400,
         message: 'name is required'
       });
-    } 
+    }
     if (!hqAddress.trim() === "") {
       return res.status(400).json({
         status: 400,
@@ -130,8 +130,8 @@ class Politico {
         status: 400,
         error: 'name is required',
       });
-    }
-    if (!req.body.logourl) {
+    } 
+     if (!req.body.logourl) {
       return res.status(400).json({
         status: 400,
         error: 'logourl is required',
