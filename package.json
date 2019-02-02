@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js --exec babel-node --",
+    "start": "babel-node app",
+    "start:dev": "nodemon --exec babel-node app",
     "test:dev": "nyc --reporter=html --reporter=text mocha test --compilers js:babel-core/register --timeout 50000ms --exit",
     "test": "npm run test:dev"
   },
