@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/JerryG09/Politico#readme",
   "dependencies": {
-    "babel": "^6.23.0",
+    "babel-core": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-env": "^2.4.1",
     "babel-preset-es2015": "^6.24.1",
