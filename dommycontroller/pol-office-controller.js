@@ -15,7 +15,8 @@ class PoliticOffice{
         status: 400,
         error: 'type is required'
       });
-    } else if (!req.body.name.trim() ==="") {
+    } 
+    if (!req.body.name.trim() ==="") {
       return res.status(400).json({
         status: 400,
         error: 'name is required'
