@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "babel-node app",
-    "start:dev": "nodemon --exec babel-node app",
+    "start": "babel-node app.js",
+    "start:dev": "nodemon --exec babel-node app.js",
     "test:dev": "nyc --reporter=html --reporter=text mocha test --compilers js:babel-core/register --timeout 50000ms --exit",
     "test": "npm run test:dev"
   },
@@ -24,15 +24,13 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
-    "cli": "^1.0.1",
-    "eslint": "^5.12.1",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
-    "preset": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "eslint": "^5.12.1",
     "http": "0.0.0",
     "joi": "^14.3.1",
     "nyc": "^13.1.0"
