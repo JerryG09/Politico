@@ -21,14 +21,13 @@
   "homepage": "https://github.com/JerryG09/Politico#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.23.0",
-    "babel-preset-env": "1.7.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
     "cli": "^1.0.1",
     "eslint": "^5.12.1",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
-    "nodemon": "^1.18.9",
     "preset": "^1.0.0"
   },
   "devDependencies": {
@@ -37,5 +36,6 @@
     "http": "0.0.0",
     "joi": "^14.3.1",
     "nyc": "^13.1.0"
+    "nodemon": "^1.18.9"
   }
 }
